@@ -111,8 +111,8 @@ class Sensor(db.Model):
         if length == 0:
             return 0
         if not length % 2:
-            return (s[length / 2] + s[length / 2] - 1) / 2
-        return s[length / 2]
+            return (s[int(length / 2)] + s[int(length / 2)] - 1) / 2
+        return s[int(length / 2)]
 
     @staticmethod
     def _round_to_hour(dt):
