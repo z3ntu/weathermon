@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 from collections import Counter
 
 from flask import Flask, render_template, jsonify
-from flask.ext.sqlalchemy import SQLAlchemy
+from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.sql import func
 from flask_bootstrap import Bootstrap
 
